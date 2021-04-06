@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Cards from './Components/Cards'
 
@@ -55,10 +54,10 @@ class App extends Component{
 
         
         <Cards
-            City = {this.state.wdata.name}
-            Temp = {this.state.wdata.main.temp}
-            country = {this.state.wdata.sys.country}
-            description = {this.state.wdata.weather[0].description}
+          City = {this.state.wdata.name}
+          Temp = {this.state.wdata.main.temp}
+          country = {this.state.wdata.sys.country}
+          description = {this.state.wdata.weather[0].description}
           icon={"http://openweathermap.org/img/wn/" + this.state.wdata.weather[0].icon + "@2x.png"}
         />
 
