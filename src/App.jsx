@@ -20,7 +20,7 @@ const App = () => {
         // ComponentDidUpdate
         let city = cities[cities.length - 1]; // City is last element
         // let city = cities;
-        axios.get("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+API_KEY+"&units=metric")
+        axios.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+API_KEY+"&units=metric")
             .then((res) => {
                 let data = res.data;
                 setCityData( prevData => [...prevData, data]);
@@ -44,7 +44,7 @@ const App = () => {
                         Temp = {item.main.temp}
                         country = {item.sys.country}
                         description = {item.weather[0].description}
-                        icon={"http://openweathermap.org/img/wn/" + item.weather[0].icon + "@2x.png"}
+                        icon={"https://openweathermap.org/img/wn/" + item.weather[0].icon + "@2x.png"}
                     />
                 </div>
             )}
