@@ -3,7 +3,7 @@ import Card from "./Card";
 import '../App.css'
 const Cards = (props) =>{
 	return(
-		<div className = "grid">
+		<div style={{width:"auto"}}>
 			<div className="card">
 				<div className="container">						
 					<h2> 
