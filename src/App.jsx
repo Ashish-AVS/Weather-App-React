@@ -48,7 +48,7 @@ const App = () => {
     const showErrorMessage = () => {
         return(
             <div>
-                Not a valid city name
+               Enter a valid city name
             </div>
         );
     }
