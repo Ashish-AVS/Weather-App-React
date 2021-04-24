@@ -6,7 +6,7 @@ const API_KEY = "78872b499149036415d75305243de5d8";
 
 
 const App = () => {
-    const [cities, setCities] = useState(["Hyderabad"]);
+    const [cities, setCities] = useState([""]);
     const [tempCity, setTempCity] = useState("");
     const [cityData, setCityData] = useState([]);
     const [error, setError] = useState(false);
@@ -62,7 +62,7 @@ const App = () => {
         <button type = "submit" className="btn btn-danger submitButton btn-lg" onClick={() => updateCities(true, "")}>Submit</button>
         </div>
             <div className="weather-container">
-            {cityData.map( (item) => 
+            {cityData &&cityData.map( (item) => 
                 <div className="weather-item">
                     <Cards
                         key={item.id}
